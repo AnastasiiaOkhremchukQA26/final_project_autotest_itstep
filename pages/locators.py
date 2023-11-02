@@ -16,5 +16,15 @@ class BasePageLocators:
     SUBMIT = (By.XPATH, "//div[@class='header_search']//button")
     WISH = (By.XPATH, "//div[contains(@class, 'wishlist')]/div[@class='wishlist_icon']/a/img")
     CART = (By.XPATH, "//div[@class='cart']//div[@class='cart_icon']/a/img")
+    HITS = (By.XPATH, "//a[span='Хиты']")
+    DISCOUNTS = (By.XPATH, "//a[span='Скидки']")
+    NEW_ITEMS = (By.XPATH, "//a[span='Новинки']")
+    SAMSUNG_CAT = (By.XPATH, "//div[text() = 'Samsung']")
+    SAMSUNG_J701 = (By.XPATH, "//a[text() = 'Samsung J701']")
+    SUBSCRIBE = (By.XPATH, "//button[text()='Подписаться!']")
+    INPUT_SUBSCRIBE = (By.XPATH, "//input[@name='submail']")
+    LOGO_FOOTER = (By.XPATH, "//img[@src='images/logo-footer.png']")
+
+
 
 
