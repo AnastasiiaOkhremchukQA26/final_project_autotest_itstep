@@ -31,6 +31,8 @@ class BasePageLocators:
     INPUT_SUBSCRIBE = (By.XPATH, "//input[@name='submail']")
     LOGO_FOOTER = (By.XPATH, "//img[@src='images/logo-footer.png']")
 
+
+class MainPageLocators:
     REFUND = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[1]")
     FREE_SHIPPING = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[2]")
     PAYMENT_DELAY = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[3]")
