@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 class BasePageLocators:
     LOGIN_SIGNUP = (By.XPATH, "//div[@class='top_bar_user']/a[@href='user/login']")
+    DETAILS = (By.XPATH, "//a[text()='Детали сотрудничества']")
     FEEDBACK = (By.XPATH, "//a[text()='Обратная связь']")
     DELIVERY = (By.XPATH, "//a[text()='Доставка']")
     WARRANTY = (By.XPATH, "//a[text()='Гарантия']")
@@ -52,6 +53,8 @@ class MainPageLocators:
     TRENDS_LEFT = (By.XPATH, "//div[@class='trends_prev trends_nav slick-arrow']")
     TRENDS_RIGHT = (By.XPATH, "//div[@class='trends_next trends_nav slick-arrow']")
     TRENDS_AIRPODS_2 = (By.XPATH, "(//div[@class='trends_item d-flex flex-column align-items-center justify-content-center'])[11]")
+
+
 
 
 
