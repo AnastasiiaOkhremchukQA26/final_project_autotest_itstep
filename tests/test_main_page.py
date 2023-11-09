@@ -1,5 +1,6 @@
 import pytest
 from ..pages.base_page import BasePage
+from ..pages.main_page import MainPage
 from ..settings import sets
 
 @pytest.mark.smoke
@@ -14,4 +15,16 @@ class TestMainPage:
         page = BasePage(browser, sets.PROD_SERVER)
         page.open()
 
+    def test_main_page_header(self, browser):
+        self.link_to_cabinet = browser.current_url
+        page = MainPage(browser, self.link_to_cabinet)
+        page.is_button_login()
+        page.is_button_feedback()
+        page.is_button_delivery()
+        page.is_button_warranty()
+        page.is_button_phone()
+        page.is_button_currency()
+        page.is_button_uah()
+        page.is_button_usd()
+        page.is_button_eur()
 
