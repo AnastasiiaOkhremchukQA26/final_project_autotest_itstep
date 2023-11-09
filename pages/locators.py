@@ -31,13 +31,20 @@ class BasePageLocators:
     SUBSCRIBE = (By.XPATH, "//button[text()='Подписаться!']")
     INPUT_SUBSCRIBE = (By.XPATH, "//input[@name='submail']")
     LOGO_FOOTER = (By.XPATH, "//img[@src='images/logo-footer.png']")
+    ALERT_SUCCESS = (By.XPATH, "//div[@id = 'alert-success']")
+
 
 
 class MainPageLocators:
+    MAIN_SLIDER = (By.XPATH, "//div[@class = 'screen_slider']")
+    CAT_ZARYADKI = (By.XPATH, "//a[@href='category/zaryadki']")
+    MAIN_SUBCAT = (By.XPATH, '//a[@href="category/Besprovodnye-BZU"]')
+
     REFUND = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[1]")
     FREE_SHIPPING = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[2]")
     PAYMENT_DELAY = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[3]")
     TECHNICAL_SUPPORT = (By.XPATH, "(//div[@class='char_item d-flex flex-row align-items-center justify-content-start'])[4]")
+
     SHOW_ALL = (By.XPATH, "//a[@href='main/showNew' and contains(@class, 'view-all')]")
     LEFT = (By.XPATH, "//div[@class='arrivals_nav arrivals_prev']/i[@class='fas fa-chevron-left']")
     RIGHT = (By.XPATH, "//div[@class='arrivals_nav arrivals_next']/i[@class='fas fa-chevron-right']")
