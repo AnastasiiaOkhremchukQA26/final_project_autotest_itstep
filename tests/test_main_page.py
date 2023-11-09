@@ -27,4 +27,3 @@ class TestMainPage:
         page.is_button_uah()
         page.is_button_usd()
         page.is_button_eur()
-
